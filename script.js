@@ -12,7 +12,7 @@ let mainList = { // всю инфу заносим в объект
 	}
 };
 
-/*for (let i = 0; i < 5; i++) {
+for (let i = 0; i < 5; i++) {
 	let a = prompt('What type of goods do you sell?');
 	if ((typeof(a)) === 'string' && (typeof(a)) != null && a != '' && a.length < 50) {
 		console.log('All is correct!');
@@ -20,9 +20,9 @@ let mainList = { // всю инфу заносим в объект
 	} else {
 		i = i - 1;
 	}
-}*/
+}
 
-let i = 0;
+/*let i = 0;
 while (i < 5) {	
 	let a = prompt('What type of goods do you sell?');
 	if ((typeof(a)) === 'string' && (typeof(a)) != null && a != '' && a.length < 50) {
@@ -31,7 +31,18 @@ while (i < 5) {
 	} else {
 		i = i--;
 	}
-}
+}*/
+
+/*let i = 0;
+do {
+	let a = prompt('What type of goods do you sell?');
+	if ((typeof(a)) === 'string' && (typeof(a)) != null && a != '' && a.length < 50) {
+	console.log("All is correct!");
+	i++;
+	} else {
+		i = i--;
+	}
+} while(i < 5);*/
 
 if(time < 0) {
 	console.log('It is impossible!');
