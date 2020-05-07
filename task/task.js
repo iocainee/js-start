@@ -16,7 +16,9 @@ for (let i=0; i < 7; i++) {
 	if(week[i] === week[n]) {
 		document.write("<br \/>", week[i].italics());		
 	} else if(week[i] === week[5] || week[i] === week[6]) {
-		document.write("<br \/>", week[i].bold());		
+		document.write("<br \/>", week[i].bold());
+	} else if(week[n] === week[5] || week[n] === week[6]) {
+		document.write("<br \/>", week[i].bold().italics());
 	} else { 
         document.write("<br \/>", week[i]);
     }
