@@ -14,13 +14,13 @@ var n = d.getDay(); // в переменную n заносим номер дн�
 
 for (let i=0; i < 7; i++) {
 	if(week[i] === week[n]) {
-		document.write("<br \/>", week[i].italics());		
-	} else if(week[i] === week[5] || week[i] === week[6]) {
-		document.write("<br \/>", week[i].bold());
+		document.write("<br \/>", week[i].italics()); 	// текущий день выводим курсивом
+	} else if(week[i] === week[5] || week[i] === week[6]) { 
+		document.write("<br \/>", week[i].bold()); 		// выходные выводим полужирным
 	} else if(week[n] === week[5] || week[n] === week[6]) {
-		document.write("<br \/>", week[i].bold().italics());
+		document.write("<br \/>", week[i].bold().italics()); // если текущий день совпадет с выходным, выводим в курсиве и полужирным
 	} else { 
-        document.write("<br \/>", week[i]);
+        document.write("<br \/>", week[i]); // если день не выходной и не текущий, выводим как есть
     }
 	}
 
