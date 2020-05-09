@@ -66,26 +66,11 @@ function discountSystem() {
 }
 /*discountSystem();*/
 
-+ " - " + 1;
-
-	function employers() {
-		mainList.employers.firstName = prompt("What is the name of the first employer?");
-			while (isNaN(mainList.employers.firstName) || mainList.employers.firstName == '' || mainList.employers.firstName == null) {
-				mainList.employers.firstName = prompt('What is the name of the first employer?');
-			}
-
-		mainList.employers.secondName = prompt("What is the name of the first employer?") 
-
-		mainList.employers.thirdName = prompt("What is the name of the first employer?") 
-
-		mainList.employers.fourthName = prompt("What is the name of the first employer?")
+function hireEmployers() {
+	for (let i = 1; i < 4; i++) {
+		let name = prompt("Employer name");
+		mainList.employers[i] = name;
 	}
-
-/*		mainList.employers.firstName = prompt("What is the name of the first employer?");
-			while ((typeof(mainList.employers.firstName)) === 'string' && (typeof(mainList.employers.firstName)) != null && mainList.employers.firstName != '' && mainList.employers.firstName.length < 50) {
-				mainList.employers.firstName = prompt('What is the name of the first employer?');
-			}*/
-
-
+}
 
 console.log(mainList);
