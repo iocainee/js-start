@@ -38,3 +38,20 @@ for (i = 0; i < 7; i++) {
 		i++;
 	}
 }
+
+/*Третье усложненное задание*/
+
+let str = 'урок-3-был слишком легким';
+str = str.charAt(0).toUpperCase() + str.substr(1); // берем первый символ строки, делаем его верхним регистром и склеиваем с строкой начиная с 1 элемента (р)
+str = str.replace(/-/g,' '); // g - это флаг, чтобы замена носила глобальный характер
+console.log(str)
+str = str.substr(0, 18) // вырезаем слово "легким", взяв символы от 0 до 18
+str = str.replace(str.substr(16, 2), "оо"); // заменяем два последних символа на о
+
+let arrNew = [];
+let arr = [20, 33, 1, 'Человек', 2, 3];
+for(i = 0; i < 5; i++){
+	arrNew[i] = arr[i] * arr[i] * arr[i];
+}
+let n = arrNew[0] + arrNew[1] + arrNew[2] + arrNew[3] + arrNew[4] + arrNew[5];
+console.log(Math.sqrt(n))
