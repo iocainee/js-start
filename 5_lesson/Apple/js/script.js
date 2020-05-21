@@ -13,3 +13,5 @@ menu.appendChild(fifth);
 document.body.style.backgroundImage = "url('img/apple_true.jpg')";
 columns[1].removeChild(advertising);
 title1.textContent = 'Мы продаем только подлинную технику Apple!'
+
+let opinion = prompt('Как вы относитесь к технике Apple?');
