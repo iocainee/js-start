@@ -12,6 +12,7 @@ let open = document.getElementById('open-btn'),
 	budget_btn = document.getElementsByTagName('button')[2],
 	employers_btn = document.getElementsByTagName('button')[3],
 	discount_btn = document.getElementsByTagName('button')[4],
+    discount_btn_off = document.getElementsByTagName('button')[5],
 	choose_item = document.querySelector('.choose-item'),
 	time_value = document.querySelector('.time-value'),
 	count_budget_value = document.querySelector('.count-budget-value'),
@@ -21,7 +22,11 @@ let budget,
 	price;
 
 open.addEventListener('click', () => {
-	budget = prompt('What is your budget?');
+    let timer = setTimeout(start, 2000);
+});
+
+function start() {
+    budget = prompt('What is your budget?');
 
 	while (isNaN(budget) || budget == '' || budget == null) {
 		budget = prompt('What is your budget?');
@@ -30,7 +35,7 @@ open.addEventListener('click', () => {
 
 	name_value.textContent = prompt('What is your shop name?').toUpperCase();
 
-});
+}
 
 goods_btn.addEventListener('click', () => {
 				for (let i = 0; i < goods_item.length; i++) {
@@ -94,7 +99,11 @@ for (let i = 0; i < hire_employers_item.length; i++) {
 
 discount_btn.addEventListener('click', () => {
 	discount_value.style.backgroundColor = 'green'
-})
+});
+
+discount_btn_off.addEventListener('click', () => {
+	discount_value.style.backgroundColor = 'red'
+});
 
 let mainList = { // всю инфу заносим в объект
 	budget: budget,

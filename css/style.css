@@ -175,8 +175,14 @@ body {
   margin-top: 10px;
 }
 
- .discount-btn {
+.discount-btn {
   display: block;
   margin: 0 auto;
   margin-top: 10px;
  }
+
+.discount-btn-off {
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+}
