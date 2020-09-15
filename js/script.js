@@ -117,3 +117,4 @@ let mainList = { // всю инфу заносим в объект
 
 console.log(mainList);
 
+console.log("123");
