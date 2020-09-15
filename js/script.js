@@ -105,7 +105,7 @@ discount_btn_off.addEventListener('click', () => {
 	discount_value.style.backgroundColor = 'red'
 });
 
-let mainList = { // всю инфу заносим в объект
+let mainList = { 
 	budget: budget,
 	shopName: name_value.textContent,	
 	open: false,
@@ -116,5 +116,3 @@ let mainList = { // всю инфу заносим в объект
 };
 
 console.log(mainList);
-
-console.log("123");
