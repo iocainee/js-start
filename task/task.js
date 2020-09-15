@@ -49,7 +49,7 @@ str = str.substr(0, 18) // вырезаем слово "легким", взяв 
 str = str.replace(str.substr(16, 2), "оо"); // заменяем два последних символа на о
 
 let arrNew = [];
-let arr = [20, 33, 1, 'Человек', 2, 3];
+let arr = [20, 33, 1, 'Человек1', 2, 3];
 for(i = 0; i < 5; i++){
 	arrNew[i] = arr[i] * arr[i] * arr[i];
 }
